@@ -1,0 +1,403 @@
+[
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "apellido": "García",
+      "sexo": "hombre",
+      "estado_civil": "soltero",
+      "edad": 25
+    },
+    {
+      "id": 2,
+      "nombre": "María",
+      "apellido": "Martínez",
+      "sexo": "mujer",
+      "estado_civil": "casado",
+      "edad": 30
+    },
+    {
+      "id": 3,
+      "nombre": "Pedro",
+      "apellido": "López",
+      "sexo": "hombre",
+      "estado_civil": "viudo",
+      "edad": 40
+    },
+    {
+      "id": 4,
+      "nombre": "Ana",
+      "apellido": "Sánchez",
+      "sexo": "mujer",
+      "estado_civil": "soltero",
+      "edad": 22
+    },
+    {
+      "id": 5,
+      "nombre": "Javier",
+      "apellido": "Rodríguez",
+      "sexo": "hombre",
+      "estado_civil": "casado",
+      "edad": 35
+    },
+    {
+      "id": 6,
+      "nombre": "Lucía",
+      "apellido": "Gómez",
+      "sexo": "mujer",
+      "estado_civil": "viudo",
+      "edad": 48
+    },
+    {
+      "id": 7,
+      "nombre": "Carlos",
+      "apellido": "Fernández",
+      "sexo": "hombre",
+      "estado_civil": "soltero",
+      "edad": 20
+    },
+    {
+      "id": 8,
+      "nombre": "Elena",
+      "apellido": "Díaz",
+      "sexo": "mujer",
+      "estado_civil": "casado",
+      "edad": 33
+    },
+    {
+      "id": 9,
+      "nombre": "Luis",
+      "apellido": "Pérez",
+      "sexo": "hombre",
+      "estado_civil": "viudo",
+      "edad": 55
+    },
+    {
+      "id": 10,
+      "nombre": "Marina",
+      "apellido": "Ruiz",
+      "sexo": "mujer",
+      "estado_civil": "soltero",
+      "edad": 27
+    },
+    {
+      "id": 11,
+      "nombre": "Sergio",
+      "apellido": "Alvarez",
+      "sexo": "hombre",
+      "estado_civil": "casado",
+      "edad": 32
+    },
+    {
+      "id": 12,
+      "nombre": "Carmen",
+      "apellido": "Torres",
+      "sexo": "mujer",
+      "estado_civil": "viudo",
+      "edad": 42
+    },
+    {
+      "id": 13,
+      "nombre": "Diego",
+      "apellido": "Jiménez",
+      "sexo": "hombre",
+      "estado_civil": "soltero",
+      "edad": 23
+    },
+    {
+      "id": 14,
+      "nombre": "Laura",
+      "apellido": "Navarro",
+      "sexo": "mujer",
+      "estado_civil": "casado",
+      "edad": 29
+    },
+    {
+      "id": 15,
+      "nombre": "Mario",
+      "apellido": "Sanz",
+      "sexo": "hombre",
+      "estado_civil": "viudo",
+      "edad": 50
+    },
+    {
+      "id": 16,
+      "nombre": "Raquel",
+      "apellido": "Iglesias",
+      "sexo": "mujer",
+      "estado_civil": "soltero",
+      "edad": 24
+    },
+    {
+      "id": 17,
+      "nombre": "Pablo",
+      "apellido": "Ortega",
+      "sexo": "hombre",
+      "estado_civil": "casado",
+      "edad": 34
+    },
+    {
+      "id": 18,
+      "nombre": "Sofía",
+      "apellido": "Morales",
+      "sexo": "mujer",
+      "estado_civil": "viudo",
+      "edad": 45
+    },
+    {
+      "id": 19,
+      "nombre": "Daniel",
+      "apellido": "Vega",
+      "sexo": "hombre",
+      "estado_civil": "soltero",
+      "edad": 26
+    },
+    {
+      "id": 20,
+      "nombre": "Cristina",
+      "apellido": "Castro",
+      "sexo": "mujer",
+      "estado_civil": "casado",
+      "edad": 31
+    },
+    {
+      "id": 21,
+      "nombre": "Jorge",
+      "apellido": "Ramos",
+      "sexo": "hombre",
+      "estado_civil": "viudo",
+      "edad": 60
+    },
+    {
+      "id": 22,
+      "nombre": "Natalia",
+      "apellido": "Cabrera",
+      "sexo": "mujer",
+      "estado_civil": "soltero",
+      "edad": 28
+    },
+    {
+      "id": 23,
+      "nombre": "Alberto",
+      "apellido": "Herrero",
+      "sexo": "hombre",
+      "estado_civil": "casado",
+      "edad": 37
+    },
+    {
+      "id": 24,
+      "nombre": "Isabel",
+      "apellido": "Gallardo",
+      "sexo": "mujer",
+      "estado_civil": "viudo",
+      "edad": 47
+    },
+    {
+      "id": 25,
+      "nombre": "Manuel",
+      "apellido": "Rey",
+      "sexo": "hombre",
+      "estado_civil": "soltero",
+      "edad": 21
+    },
+    {
+      "id": 26,
+      "nombre": "Lucas",
+      "apellido": "Hidalgo",
+      "sexo": "hombre",
+      "estado_civil": "casado",
+      "edad": 36
+    },
+    {
+      "id": 27,
+      "nombre": "Beatriz",
+      "apellido": "Guerrero",
+      "sexo": "mujer",
+      "estado_civil": "soltero",
+      "edad": 25
+    },
+    {
+      "id": 28,
+      "nombre": "Antonio",
+      "apellido": "Giménez",
+      "sexo": "hombre",
+      "estado_civil": "viudo",
+      "edad": 65
+    },
+    {
+      "id": 29,
+      "nombre": "Celia",
+      "apellido": "Ferrer",
+      "sexo": "mujer",
+      "estado_civil": "casado",
+      "edad": 38
+    },
+    {
+      "id": 30,
+      "nombre": "Fernando",
+      "apellido": "Vidal",
+      "sexo": "hombre",
+      "estado_civil": "soltero",
+      "edad": 22
+    },
+    {
+      "id": 31,
+      "nombre": "Martha",
+      "apellido": "Flores",
+      "sexo": "mujer",
+      "estado_civil": "viudo",
+      "edad": 55
+    },
+    {
+      "id": 32,
+      "nombre": "Gabriel",
+      "apellido": "Nieto",
+      "sexo": "hombre",
+      "estado_civil": "casado",
+      "edad": 33
+    },
+    {
+      "id": 33,
+      "nombre": "Patricia",
+      "apellido": "Serrano",
+      "sexo": "mujer",
+      "estado_civil": "soltero",
+      "edad": 29
+    },
+    {
+      "id": 34,
+      "nombre": "Roberto",
+      "apellido": "Arias",
+      "sexo": "hombre",
+      "estado_civil": "viudo",
+      "edad": 70
+    },
+    {
+      "id": 35,
+      "nombre": "Verónica",
+      "apellido": "Pardo",
+      "sexo": "mujer",
+      "estado_civil": "casado",
+      "edad": 40
+    },
+    {
+      "id": 36,
+      "nombre": "Eduardo",
+      "apellido": "Campos",
+      "sexo": "hombre",
+      "estado_civil": "soltero",
+      "edad": 24
+    },
+    {
+      "id": 37,
+      "nombre": "Rosa",
+      "apellido": "Vega",
+      "sexo": "mujer",
+      "estado_civil": "viudo",
+      "edad": 48
+    },
+    {
+      "id": 38,
+      "nombre": "Hugo",
+      "apellido": "Crespo",
+      "sexo": "hombre",
+      "estado_civil": "casado",
+      "edad": 32
+    },
+    {
+      "id": 39,
+      "nombre": "Alicia",
+      "apellido": "Moya",
+      "sexo": "mujer",
+      "estado_civil": "soltero",
+      "edad": 26
+    },
+    {
+      "id": 40,
+      "nombre": "Alberto",
+      "apellido": "Romero",
+      "sexo": "hombre",
+      "estado_civil": "viudo",
+      "edad": 75
+    },
+    {
+      "id": 41,
+      "nombre": "Carmen",
+      "apellido": "Cortés",
+      "sexo": "mujer",
+      "estado_civil": "casado",
+      "edad": 43
+    },
+    {
+      "id": 42,
+      "nombre": "José",
+      "apellido": "Medina",
+      "sexo": "hombre",
+      "estado_civil": "soltero",
+      "edad": 23
+    },
+    {
+      "id": 43,
+      "nombre": "Lorena",
+      "apellido": "Moreno",
+      "sexo": "mujer",
+      "estado_civil": "viudo",
+      "edad": 50
+    },
+    {
+      "id": 44,
+      "nombre": "Rubén",
+      "apellido": "Ríos",
+      "sexo": "hombre",
+      "estado_civil": "casado",
+      "edad": 36
+    },
+    {
+      "id": 45,
+      "nombre": "Natalia",
+      "apellido": "Gutiérrez",
+      "sexo": "mujer",
+      "estado_civil": "soltero",
+      "edad": 27
+    },
+    {
+      "id": 46,
+      "nombre": "Pablo",
+      "apellido": "Márquez",
+      "sexo": "hombre",
+      "estado_civil": "viudo",
+      "edad": 80
+    },
+    {
+      "id": 47,
+      "nombre": "María José",
+      "apellido": "Ibáñez",
+      "sexo": "mujer",
+      "estado_civil": "casado",
+      "edad": 41
+    },
+    {
+      "id": 48,
+      "nombre": "Manuel",
+      "apellido": "Ortiz",
+      "sexo": "hombre",
+      "estado_civil": "soltero",
+      "edad": 25
+    },
+    {
+      "id": 49,
+      "nombre": "Lucía",
+      "apellido": "Pascual",
+      "sexo": "mujer",
+      "estado_civil": "viudo",
+      "edad": 52
+    },
+    {
+      "id": 50,
+      "nombre": "Francisco",
+      "apellido": "Castillo",
+      "sexo": "hombre",
+      "estado_civil": "casado",
+      "edad": 28
+    }
+  ]
+  

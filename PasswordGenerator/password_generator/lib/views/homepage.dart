@@ -14,8 +14,7 @@ class _ExamplePageState extends State<ExamplePage> {
   @override
   void initState() {
     super.initState();
-    _textController = TextEditingController();
-    _updatePassword(_generatePassword()); // Actualiza la contraseña inicial al inicio
+    _textController = TextEditingController(); // Actualiza la contraseña inicial al inicio
   }
 
   @override
@@ -53,11 +52,7 @@ class _ExamplePageState extends State<ExamplePage> {
     });
   }
 
-  // Genera una contraseña inicial
-  String _generatePassword() {
-    // Aquí puedes implementar la lógica para generar una contraseña inicial
-    return 'InitialPassword123'; // Ejemplo de contraseña inicial
-  }
+
 
   @override
   void dispose() {

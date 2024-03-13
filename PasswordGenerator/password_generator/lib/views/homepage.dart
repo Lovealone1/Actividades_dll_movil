@@ -14,45 +14,41 @@ class _ExamplePageState extends State<ExamplePage> {
   @override
   void initState() {
     super.initState();
-    _textController = TextEditingController(); // Actualiza la contraseña inicial al inicio
+    _textController = TextEditingController();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('PasswordGenerator')),
+      backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            // Muestra el TextField con la contraseña
-            TextFieldWithCopyAndReload(
-              textController: _textController,
-              displayText: _displayText,
-            ),
-            SizedBox(height: 16.0), // Espacio entre los widgets
-            Expanded(
-              // Utiliza el widget PasswordLengthWidget para ajustar la longitud de la contraseña
-              child: PasswordLengthWidget(
-                passwordUpdateCallback: _updatePassword, // Actualiza la contraseña cuando cambian los parámetros
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              TextFieldWithCopyAndReload(
+                textController: _textController,
+                displayText: _displayText,
               ),
-            ),
-          ],
+              SizedBox(height: 16.0),
+              PasswordLengthWidget(
+                passwordUpdateCallback: _updatePassword,
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
 
-  // Método para actualizar la contraseña y el texto mostrado
   void _updatePassword(String newPassword) {
     setState(() {
-      _displayText = newPassword; // Actualiza el texto mostrado con la nueva contraseña
-      _textController.text = _displayText; // Actualiza el controlador de texto con la nueva contraseña
+      _displayText = newPassword;
+      _textController.text = _displayText;
     });
   }
-
-
 
   @override
   void dispose() {

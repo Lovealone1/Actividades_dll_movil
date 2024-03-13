@@ -39,6 +39,7 @@ class _PasswordLengthWidgetState extends State<PasswordLengthWidget> {
         borderRadius: BorderRadius.circular(4.0),
       ),
       color: Color.fromARGB(255, 255, 255, 255),
+      surfaceTintColor: Color.fromARGB(255, 255, 255, 255),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -87,7 +88,7 @@ class _PasswordLengthWidgetState extends State<PasswordLengthWidget> {
                   _passwordLength = value.round();
                   _lengthController.text = _passwordLength.toString();
                   // Llama a la función para generar la contraseña automáticamente
-                  widget.passwordUpdateCallback(_generatePassword());
+                  _updatePassword();
                 });
               },
             ),
@@ -108,6 +109,7 @@ class _PasswordLengthWidgetState extends State<PasswordLengthWidget> {
                       if (!_includeUppercase && !_includeLowercase) {
                         _includeUppercase = true;
                       }
+                      _updatePassword(); // Actualiza la contraseña cuando cambia el tipo
                     });
                   },
                 ),
@@ -118,6 +120,7 @@ class _PasswordLengthWidgetState extends State<PasswordLengthWidget> {
                   onChanged: (PasswordType? value) {
                     setState(() {
                       _passwordType = value!;
+                      _updatePassword(); // Actualiza la contraseña cuando cambia el tipo
                     });
                   },
                 ),
@@ -128,6 +131,7 @@ class _PasswordLengthWidgetState extends State<PasswordLengthWidget> {
                   onChanged: (PasswordType? value) {
                     setState(() {
                       _passwordType = value!;
+                      _updatePassword(); // Actualiza la contraseña cuando cambia el tipo
                     });
                   },
                 ),
@@ -143,6 +147,7 @@ class _PasswordLengthWidgetState extends State<PasswordLengthWidget> {
                           if (!_includeUppercase && !_includeLowercase) {
                             _includeLowercase = true;
                           }
+                          _updatePassword(); // Actualiza la contraseña cuando cambian las opciones
                         });
                       },
                     ),
@@ -156,6 +161,7 @@ class _PasswordLengthWidgetState extends State<PasswordLengthWidget> {
                           if (!_includeUppercase && !_includeLowercase) {
                             _includeUppercase = true;
                           }
+                          _updatePassword(); // Actualiza la contraseña cuando cambian las opciones
                         });
                       },
                     ),
@@ -169,6 +175,7 @@ class _PasswordLengthWidgetState extends State<PasswordLengthWidget> {
                       onChanged: _passwordType == PasswordType.easyToSay ? null : (bool? value) {
                         setState(() {
                           _includeNumbers = value!;
+                          _updatePassword(); // Actualiza la contraseña cuando cambian las opciones
                         });
                       },
                     ),
@@ -182,6 +189,7 @@ class _PasswordLengthWidgetState extends State<PasswordLengthWidget> {
                             onChanged: _passwordType == PasswordType.easyToSay ? null : (bool? value) {
                               setState(() {
                                 _includeSymbols = value!;
+                                _updatePassword(); // Actualiza la contraseña cuando cambian las opciones
                               });
                             },
                           ),
@@ -205,6 +213,11 @@ class _PasswordLengthWidgetState extends State<PasswordLengthWidget> {
     super.dispose();
   }
 
+  void _updatePassword() {
+    // Llama a la función para generar la contraseña automáticamente
+    widget.passwordUpdateCallback(_generatePassword());
+  }
+
   String _generatePassword() {
     switch (_passwordType) {
       case PasswordType.easyToSay:
@@ -218,21 +231,21 @@ class _PasswordLengthWidgetState extends State<PasswordLengthWidget> {
     }
   }
 
-String _generateEasyToSayPassword() {
-  String characters = '';
-  if (_includeUppercase) characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  if (_includeLowercase) characters += 'abcdefghijklmnopqrstuvwxyz';
-  // No incluir números ni símbolos si es "Fácil de decir"
+  String _generateEasyToSayPassword() {
+    String characters = '';
+    if (_includeUppercase) characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    if (_includeLowercase) characters += 'abcdefghijklmnopqrstuvwxyz';
+    // No incluir números ni símbolos si es "Fácil de decir"
 
-  if (characters.isEmpty) return ''; // Manejar el caso cuando no se selecciona ningún tipo de carácter
+    if (characters.isEmpty) return ''; // Manejar el caso cuando no se selecciona ningún tipo de carácter
 
-  String password = '';
-  final random = Random();
-  for (int i = 0; i < _passwordLength; i++) {
-    password += characters[random.nextInt(characters.length)];
+    String password = '';
+    final random = Random();
+    for (int i = 0; i < _passwordLength; i++) {
+      password += characters[random.nextInt(characters.length)];
+    }
+    return password;
   }
-  return password;
-}
 
 
   String _generateEasyToReadPassword() {

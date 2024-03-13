@@ -42,12 +42,17 @@ class _TextFieldWithCopyAndReloadState extends State<TextFieldWithCopyAndReload>
           child: Stack(
             alignment: Alignment.centerRight,
             children: [
-              TextField(
-                controller: widget.textController,
-                readOnly: true,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: '',
+              Material(
+                elevation: 3.0, // Agrega elevación al Material
+                borderRadius: BorderRadius.circular(4.0), 
+                color: Colors.white,// Ajusta el radio de borde si es necesario
+                child: TextField(
+                  controller: widget.textController,
+                  readOnly: true,
+                  decoration: InputDecoration(
+                    border: InputBorder.none, // Quita el borde de la TextField
+                    contentPadding: EdgeInsets.symmetric(vertical: 12.0, horizontal: 16.0), // Ajusta el padding si es necesario
+                  ),
                 ),
               ),
               Row(
@@ -56,12 +61,6 @@ class _TextFieldWithCopyAndReloadState extends State<TextFieldWithCopyAndReload>
                   IconButton(
                     icon: Icon(Icons.copy),
                     onPressed: _copyText,
-                  ),
-                  IconButton(
-                    icon: Icon(Icons.refresh),
-                    onPressed: () {
-                      _textController.text = widget.displayText;
-                    },
                   ),
                 ],
               ),
